@@ -4,16 +4,15 @@
    ÍNDICE
    1.  Variables de tema
    2.  Reset y base
-   3.  Preámbulo cinemático (intro 3D)
-   4.  Layout general y tarjetas "bento"
-   5.  Encabezado
-   6.  Navegación
-   7.  Sección: sobre el evento
-   8.  Sección: póster + modal
-   9.  Sección: inscripción y QR
-   10. Sección: organizan y patrocinan
-   11. Componentes auxiliares
-   12. Responsive
+   3.  Layout general y tarjetas "bento"
+   4.  Encabezado
+   5.  Navegación
+   6.  Sección: sobre el evento
+   7.  Sección: póster + modal
+   8.  Sección: inscripción y QR
+   9.  Sección: organizan y patrocinan
+   10. Componentes auxiliares
+   11. Responsive
    ========================================================= */
 
 
@@ -74,131 +73,13 @@ body.fondo-3d-activo {
     background-color: var(--color-fondo);
 }
 
-/* Bloquea el scroll mientras se muestra la intro */
-body.no-scroll {
-    overflow: hidden;
-    touch-action: none;
-}
-
 h2 {
     color: var(--color-naranja-claro);
 }
 
 
 /* =========================================================
-   3. PREÁMBULO CINEMÁTICO (INTRO 3D)
-   ========================================================= */
-#intro-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #000000 url('../img/fondos/fondo-intro.jpg') no-repeat center center / cover;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    transition: opacity 1s ease, visibility 1s ease;
-}
-
-#intro-screen.fade-out {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-#sun-canvas-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-/* ---------- Tarjeta de bienvenida (100% adaptativa) ---------- */
-.intro-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    background: rgba(15, 23, 42, 0.65);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: clamp(20px, 4vh, 40px) clamp(20px, 5vw, 50px);
-    width: min(90vw, 480px);
-    max-height: 90vh;
-    overflow-y: auto;
-    border-radius: 24px;
-    box-shadow: 0 0 50px rgba(251, 146, 60, 0.25);
-    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1), opacity 1s ease;
-}
-
-.hidden-content {
-    opacity: 0;
-    transform: translateY(30px) scale(0.92);
-    pointer-events: none;
-}
-
-.visible-content {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    pointer-events: auto;
-}
-
-.intro-logo {
-    max-height: clamp(55px, 8vh, 85px);
-    width: auto;
-    margin-bottom: 10px;
-    filter: drop-shadow(0 0 12px rgba(251, 146, 60, 0.6));
-}
-
-.intro-title {
-    font-size: clamp(1.5rem, 4vw, 2.4rem);
-    color: #ffffff;
-    text-shadow: 0 0 20px rgba(251, 146, 60, 0.7);
-    margin-bottom: 6px;
-    line-height: 1.15;
-}
-
-.intro-date {
-    font-size: clamp(0.95rem, 2.5vw, 1.2rem);
-    color: var(--color-naranja);
-    font-weight: 600;
-}
-
-.intro-subtitle {
-    color: var(--color-texto-suave);
-    margin-top: 4px;
-    margin-bottom: clamp(15px, 3vh, 25px);
-    font-size: clamp(0.85rem, 2vw, 0.95rem);
-}
-
-#enter-btn {
-    padding: clamp(10px, 2vh, 14px) clamp(20px, 4vw, 36px);
-    font-size: clamp(0.9rem, 2.2vw, 1.05rem);
-    font-weight: bold;
-    color: #0f172a;
-    background: linear-gradient(135deg, var(--color-naranja), var(--color-naranja-oscuro));
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-#enter-btn:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 40px rgba(249, 115, 22, 0.9);
-    background: linear-gradient(135deg, var(--color-naranja-claro), var(--color-naranja));
-}
-
-
-/* =========================================================
-   4. LAYOUT GENERAL Y TARJETAS "BENTO"
+   3. LAYOUT GENERAL Y TARJETAS "BENTO"
    ========================================================= */
 .glass-container {
     max-width: 1200px;
@@ -236,7 +117,7 @@ h2 {
 
 
 /* =========================================================
-   5. ENCABEZADO
+   4. ENCABEZADO
    ========================================================= */
 .header-card {
     display: flex;
@@ -261,7 +142,7 @@ h2 {
 
 
 /* =========================================================
-   6. NAVEGACIÓN
+   5. NAVEGACIÓN
    ========================================================= */
 .menu {
     display: flex;
@@ -287,7 +168,7 @@ h2 {
 
 
 /* =========================================================
-   7. SECCIÓN: SOBRE EL EVENTO
+   6. SECCIÓN: SOBRE EL EVENTO
    ========================================================= */
 .content-section {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -295,7 +176,7 @@ h2 {
 
 
 /* =========================================================
-   8. SECCIÓN: PÓSTER + MODAL
+   7. SECCIÓN: PÓSTER + MODAL
    ========================================================= */
 .single-card-section {
     display: flex;
@@ -374,7 +255,7 @@ h2 {
 
 
 /* =========================================================
-   9. SECCIÓN: INSCRIPCIÓN Y QR
+   8. SECCIÓN: INSCRIPCIÓN Y QR
    ========================================================= */
 .registration-card {
     display: flex;
@@ -437,7 +318,7 @@ h2 {
 
 
 /* =========================================================
-   10. SECCIÓN: ORGANIZAN Y PATROCINAN
+   9. SECCIÓN: ORGANIZAN Y PATROCINAN
    ========================================================= */
 .sponsors-section {
     text-align: center;
@@ -504,7 +385,7 @@ h2 {
 
 
 /* =========================================================
-   11. COMPONENTES AUXILIARES
+   10. COMPONENTES AUXILIARES
    (definidos para reutilizar en las demás páginas del sitio)
    ========================================================= */
 .social-links {
@@ -545,7 +426,7 @@ h2 {
 
 
 /* =========================================================
-   12. RESPONSIVE
+   11. RESPONSIVE
    ========================================================= */
 @media (max-width: 600px) {
     .registration-card {

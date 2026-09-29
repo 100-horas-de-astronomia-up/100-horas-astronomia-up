@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>100 Horas de Astronomía</title>
-    <link rel="shortcut icon" type="image/png" href="assets/img/logos/100-horas-astronomia.png">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logos/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logos/apple-touch-icon.png">
     <link rel="stylesheet" href="assets/css/estilos.css">
     <!-- Three.js (CDN) — necesario para el preámbulo 3D -->
     <script src="assets/js/controljs.js"></script>
@@ -18,27 +22,11 @@
     <div id="fondo-3d" aria-hidden="true"></div>
 
     <!-- =========================================================
-         1. PREÁMBULO CINEMÁTICO (Sol + planetas + tarjeta)
-         ========================================================= -->
-    <div id="intro-screen">
-        <div id="sun-canvas-container"></div>
-
-        <!-- Tarjeta que aparece tras la revelación -->
-        <div class="intro-content hidden-content" id="intro-card">
-            <h1 class="intro-title">100 Horas de Astronomía</h1>
-            <p class="intro-date">1 al 4 de Octubre 2026</p>
-            <p class="intro-subtitle">Una Nueva Perspectiva de Nuestro Sistema Solar</p>
-            <button id="enter-btn">Ingresar al Evento ✨</button>
-        </div>
-    </div>
-
-
-    <!-- =========================================================
          CONTENIDO PRINCIPAL
          ========================================================= -->
     <div class="glass-container">
 
-        <!-- ------------------ 2. ENCABEZADO ------------------ -->
+        <!-- ------------------ 1. ENCABEZADO ------------------ -->
         <header class="bento-card header-card">
             <div class="logo-wrapper">
                 <img src="assets/img/logos/100-horas-astronomia.png"
@@ -51,7 +39,7 @@
         </header>
 
 
-        <!-- ------------------ 3. NAVEGACIÓN ------------------ -->
+        <!-- ------------------ 2. NAVEGACIÓN ------------------ -->
         <!-- NOTA: las páginas enlazadas aún no existen en el repo. -->
         <nav class="bento-card nav-card">
             <ul class="menu">
@@ -66,7 +54,7 @@
         </nav>
 
 
-        <!-- ------------------ 4. SOBRE EL EVENTO ------------------ -->
+        <!-- ------------------ 3. SOBRE EL EVENTO ------------------ -->
         <section id="sobre-el-evento" class="bento-grid content-section">
             <article class="bento-card feature-card">
                 <h2>100 Horas de Astronomía</h2>
@@ -91,7 +79,7 @@
         </section>
 
 
-        <!-- ------------------ 5. PÓSTER OFICIAL ------------------ -->
+        <!-- ------------------ 4. PÓSTER OFICIAL ------------------ -->
         <section id="poster" class="bento-grid single-card-section">
             <div class="bento-card poster-card">
                 <h3>Póster Oficial</h3>
@@ -104,7 +92,7 @@
         </section>
 
 
-        <!-- ------------------ 6. INSCRIPCIÓN Y QR ------------------ -->
+        <!-- ------------------ 5. INSCRIPCIÓN Y QR ------------------ -->
         <section id="inscripcion" class="bento-grid registration-section">
             <div class="bento-card registration-card">
                 <div class="qr-container">
@@ -114,7 +102,7 @@
                 <div class="registration-info">
                     <h3>Inscripción al Evento</h3>
                     <p>Escanea el código QR o haz clic en el siguiente botón para completar tu formulario de registro.</p>
-                    <a href="https://tu-link-de-registro.com" target="_blank" class="register-btn">
+                    <a href="https://forms.gle/cw6ARV3S27ebnkDW8" target="_blank" class="register-btn">
                         Registrarme Ahora
                     </a>
                 </div>
@@ -122,7 +110,7 @@
         </section>
 
 
-        <!-- ------------------ 7. ORGANIZAN Y PATROCINAN ------------------ -->
+        <!-- ------------------ 6. ORGANIZAN Y PATROCINAN ------------------ -->
         <footer id="organizan" class="bento-card sponsors-section">
             <p class="sponsors-title">Organizan y Patrocinan</p>
             <div class="sponsors-grid">
@@ -159,7 +147,6 @@
          SCRIPTS
          ========================================================= -->
     <script src="assets/js/fondo-sistema-solar.js"></script>
-    <script src="assets/js/Inicio.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

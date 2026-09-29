@@ -4,8 +4,8 @@
    Sustituye la imagen de fondo por un sistema solar en 3D que
    gira y se inclina conforme se baja por la pagina.
 
-   - Todo vive dentro de una IIFE para no chocar con las
-     variables globales de intro-3d.js (scene, camera, ...).
+   - Todo vive dentro de una IIFE para no exponer variables
+     globales que choquen con otros scripts de la pagina.
    - Si WebGL no esta disponible o falla, el script se retira
      solo y queda visible la imagen de fondo del CSS.
    - Respeta "prefers-reduced-motion": deja el sistema quieto

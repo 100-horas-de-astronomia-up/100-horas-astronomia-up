@@ -347,6 +347,25 @@ body {
     flex-grow: 1;
 }
 
+/* Horario y sede de cada participacion */
+.talk-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin: 8px 0 0 0;
+    font-size: 0.78rem;
+    color: #94a3b8;
+}
+
+.talk-meta i {
+    color: #38bdf8;
+    margin-right: 5px;
+}
+
+.talk-meta-suelta .talk-meta {
+    margin: 0 0 12px 0;
+}
+
 /* Titulo de la actividad, sobre la rejilla de un grupo */
 .grupo-actividad {
     text-align: center;
