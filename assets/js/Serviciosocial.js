@@ -114,7 +114,7 @@ const servicioSocialData = [
         horas: "100 Horas",
         proyecto: "Diseño y Arquitectura del Sitio Oficial",
         resumen: "Líder técnico del desarrollo web. Implementación de arquitectura interactiva 3D, responsive design y gestión de componentes para el evento.",
-        detalles: "Iker coordinó la arquitectura general e implementó la mayor parte del código base de la plataforma web de las '100 Horas de Astronomía', optimizando el rendimiento, la interactividad 3D y la adaptabilidad en dispositivos móviles.",
+        detalles: "Coordinación de la arquitectura web e implementación de la experiencia 3D interactiva, optimizando el rendimiento y el diseño responsivo en móviles.",
        evidencias:{
       fotos: ["evidencias/victor_1.jpg", "evidencias/victor_2.jpg"],
       videos: ["evidencias/victor_demo.mp4"],
