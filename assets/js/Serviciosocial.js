@@ -83,8 +83,8 @@ const servicioSocialData = [
         rol: "Desarrollo Web & Plataforma Digital",
         horas: "100 Horas",
         proyecto: "Diseño y Programación del Sitio Oficial",
-        resumen: "Líder técnico del desarrollo web. Implementación de arquitectura interactiva 3D, responsive design y gestión de componentes para el evento.",
-        detalles: "Victor diseñó e implementó la plataforma web completa de las '100 Horas de Astronomía', optimizando el rendimiento y adaptabilidad para dispositivos móviles y computadoras.",
+        resumen: "Co-implementación de la arquitectura 3D, desarrollo de componentes de interfaz y optimización del diseño responsivo para la plataforma.",
+        detalles: "Victor colaboró activamente en la programación frontend, participando en la integración de modelos 3D y en la maquetación de la interfaz para garantizar la fluidez de la plataforma.",
         evidencias:{
       fotos: ["evidencias/victor_1.jpg", "evidencias/victor_2.jpg"],
       videos: ["evidencias/victor_demo.mp4"],
@@ -95,11 +95,11 @@ const servicioSocialData = [
     {
         id: "EXP-002",
         estudiante: "Marco Gamboa",
-        rol: "Logística Técnico-Audiovisual",
+        rol: "Desarrollo Web & Plataforma Digital",
         horas: "100 Horas",
-        proyecto: "Soporte Técnico y Transmisiones",
-        resumen: "Coordinación de transmisiones en vivo, configuración de equipos audiovisuales y soporte en sala para ponencias magistrales.",
-        detalles: "Marco aseguró el correcto funcionamiento técnico durante las sesiones de conferencias presenciales y virtuales, además de apoyar la logística organizativa.",
+        proyecto: "Diseño y Programación del Sitio Oficial",
+        resumen: "Soporte en la integración web para transmisiones en vivo, configuración de equipos audiovisuales y apoyo técnico general.",
+        detalles: "Marco colaboró en la integración de los sistemas de streaming dentro de la plataforma web y aseguró el correcto funcionamiento técnico durante las sesiones de conferencias presenciales y virtuales.",
         evidencias:{
       fotos: ["evidencias/victor_1.jpg", "evidencias/victor_2.jpg"],
       videos: ["evidencias/victor_demo.mp4"],
@@ -110,11 +110,11 @@ const servicioSocialData = [
     {
         id: "EXP-003",
         estudiante: "Iker Madrid",
-        rol: "Divulgación Científica y Astrofísica",
+        rol: "Desarrollo Web & Plataforma Digital",
         horas: "100 Horas",
-        proyecto: "Guía de Observación Nocturna",
-        resumen: "Soporte en el manejo de telescopios para atención al público y explicación de cuerpos celestes durante la jornada estelar.",
-        detalles: "Iker colaboró directamente en las observaciones astronómicas con telescopio, orientando al público general sobre constelaciones, planetas y la luna.",
+        proyecto: "Diseño y Arquitectura del Sitio Oficial",
+        resumen: "Líder técnico del desarrollo web. Implementación de arquitectura interactiva 3D, responsive design y gestión de componentes para el evento.",
+        detalles: "Iker coordinó la arquitectura general e implementó la mayor parte del código base de la plataforma web de las '100 Horas de Astronomía', optimizando el rendimiento, la interactividad 3D y la adaptabilidad en dispositivos móviles.",
        evidencias:{
       fotos: ["evidencias/victor_1.jpg", "evidencias/victor_2.jpg"],
       videos: ["evidencias/victor_demo.mp4"],
@@ -125,11 +125,11 @@ const servicioSocialData = [
     {
         id: "EXP-004",
         estudiante: "Yedida Aboulafia",
-        rol: "Coordinación de Talleres Infantiles",
+        rol: "Coordinación de la Publicidad ",
         horas: "100 Horas",
-        proyecto: "Astronomía Recreativa e Infancias",
-        resumen: "Diseño y ejecución de dinámicas educativas para niños sobre el sistema solar y maquetas espaciales.",
-        detalles: "Yedida dirigió las actividades dirigidas a niños y jóvenes, promoviendo el interés científico a través de manualidades y experimentos didácticos.",
+        proyecto: "Estrategia de Publicidad y Difusión",
+        resumen: "Coordinación de la estrategia publicitaria, gestión de contenidos y difusión en medios para la promoción del evento.",
+        detalles: "Yedida lideró el diseño y la ejecución de las campañas publicitarias, gestionando la difusión en plataformas digitales para maximizar el alcance y la asistencia al evento.",
         evidencias:{
       fotos: ["evidencias/victor_1.jpg", "evidencias/victor_2.jpg"],
       videos: ["evidencias/victor_demo.mp4"],
