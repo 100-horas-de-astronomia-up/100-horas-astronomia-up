@@ -98,8 +98,8 @@ const servicioSocialData = [
         rol: "Desarrollo Web & Plataforma Digital",
         horas: "100 Horas",
         proyecto: "Diseño y Programación del Sitio Oficial",
-        resumen: "Soporte en la integración web para transmisiones en vivo, configuración de equipos audiovisuales y apoyo técnico general.",
-        detalles: "Marco colaboró en la integración de los sistemas de streaming dentro de la plataforma web y aseguró el correcto funcionamiento técnico durante las sesiones de conferencias presenciales y virtuales.",
+        resumen: "Co-desarrollo frontend para la estabilidad de la plataforma web y refinamiento de secciones",
+        detalles: "Marco colaboró activamente en la maquetación y ajuste de detalles en diversas secciones del sitio web, enfocándose en la estabilidad y optimización de la plataforma.",
         evidencias:{
       fotos: ["evidencias/victor_1.jpg", "evidencias/victor_2.jpg"],
       videos: ["evidencias/victor_demo.mp4"],
