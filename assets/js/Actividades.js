@@ -1,30 +1,134 @@
 // BASE DE DATOS DE ACTIVIDADES Y CONFERENCIAS
 const listaActividades = [
   {
-    id: "act-1",
-    titulo: "Astrofotografía: del hobby a la exploración",
-    fecha: "01 de Octubre, 2026",
-    horario: "10:00 a.m. - 12:00 p.m.",
-    modalidad: "Virtual (Teams / YouTube)",
-    expositor: "Dra. María Rodríguez",
-    bioExpositor: "Astrofísica y fotógrafa científica.",
-    descripcion: "Charla introductoria sobre captura de cuerpos celestes con equipos de aficionado.",
+    id: "acto-inaugural",
+    titulo: "Acto inaugural de las 100 Horas de Astronomía",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "8:30 a.m. – 8:55 a.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Autoridades e invitados",
+    bioExpositor: "Acto de apertura del evento.",
+    descripcion: "Ceremonia inaugural de las 100 Horas de Astronomía.",
     estado: "upcoming",
-    portada: "up.jpg",
+    portada: "assets/img/logos/100-horas-astronomia.png",
     evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
   },
   {
-    id: "act-2",
-    titulo: "Observación Solar y Manchas Solares",
-    fecha: "02 de Octubre, 2026",
-    horario: "02:00 p.m. - 05:00 p.m.",
-    modalidad: "Presencial (Plaza Central)",
-    expositor: "Ing. Carlos Mendoza",
-    bioExpositor: "Especialista en divulgación científica y física solar.",
-    descripcion: "Taller de observación con telescopios equipados con filtros H-Alfa.",
+    id: "kenia-rodriguez",
+    titulo: "Trayectoria de las 100 Horas de Astronomía en Panamá",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "9:00 a.m. – 9:25 a.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Mgtr. Kenia Rodríguez",
+    bioExpositor: "Conferencista de la Universidad de Panamá.",
+    descripcion: "Conferencia sobre el desarrollo y alcance de las 100 Horas de Astronomía en Panamá.",
     estado: "upcoming",
-    portada: "Captura de pantalla 2026-09-19 023533.png",
-    evidencias: { asistentes: 250, resumen: "", fotos: ["APAA.jpeg"], videoUrl: "",videoLocal: "video_observacion.mp4" }
+    portada: "assets/img/personas/Profesora Kenia Rodríguez.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
+  },
+  {
+    id: "ramiro-villareal",
+    titulo: "Cerca del Horizonte de Eventos de un Agujero Negro de Schwarzschild",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "9:30 a.m. – 9:55 a.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Mgtr. Ramiro Villareal",
+    bioExpositor: "Conferencista de la Universidad de Panamá.",
+    descripcion: "Conferencia sobre física gravitacional y agujeros negros.",
+    estado: "upcoming",
+    portada: "assets/img/personas/Profesor Ramiro Villareal.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
+  },
+  {
+    id: "luis-marin",
+    titulo: "Gaia como laboratorio computacional: datos, algoritmos y poblaciones estelares",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "10:00 a.m. – 10:25 a.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Mgtr. Luis Marín",
+    bioExpositor: "Conferencista de la Universidad de Panamá.",
+    descripcion: "Uso de catálogos astronómicos y herramientas computacionales para estudiar poblaciones estelares.",
+    estado: "upcoming",
+    portada: "assets/img/personas/Luis Marin.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
+  },
+  {
+    id: "reina-rodriguez",
+    titulo: "Clasificación Morfológica de Galaxias",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "10:30 a.m. – 10:55 a.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Lic. Reina Beatriz Rodríguez Rodríguez",
+    bioExpositor: "Conferencista de la Universidad Tecnológica de Panamá.",
+    descripcion: "Presentación sobre clasificación morfológica y análisis de galaxias.",
+    estado: "upcoming",
+    portada: "assets/img/personas/Reina Rodríguez.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
+  },
+  {
+    id: "manuel-chacon",
+    titulo: "Galaxias barradas: explorando su evolución a través del tiempo cósmico",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "11:30 a.m. – 11:55 a.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Dr. Manuel Alejandro Chacón",
+    bioExpositor: "Conferencista de la Universidad Tecnológica de Panamá.",
+    descripcion: "Conferencia sobre galaxias barradas y evolución galáctica.",
+    estado: "upcoming",
+    portada: "assets/img/personas/Manuel Alejandro.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
+  },
+  {
+    id: "pablo-weigandt",
+    titulo: "OAB: Tu Ventana al Cosmos",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "12:00 p.m. – 12:25 p.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Dr. Pablo Martín Weigandt Beckmann",
+    bioExpositor: "Conferencista invitado.",
+    descripcion: "Conferencia sobre divulgación y observación astronómica.",
+    estado: "upcoming",
+    portada: "assets/img/personas/Dr. Pablo Martín Weigandt Beckmann.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
+  },
+  {
+    id: "carlos-fernandez",
+    titulo: "Un Ingeniero en la Astronomía",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "1:30 p.m. – 1:55 p.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "MSc. Carlos Fernández",
+    bioExpositor: "Conferencista invitado.",
+    descripcion: "Conferencia sobre las aplicaciones de la ingeniería en la astronomía.",
+    estado: "upcoming",
+    portada: "assets/img/personas/Carlos Fernández.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
+  },
+  {
+    id: "daniel-sega",
+    titulo: "Ondas y Anillos Planetarios: La Onda Vertical en el Borde del Anillo A",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "2:00 p.m. – 2:25 p.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Dr. Daniel Sega",
+    bioExpositor: "Conferencista invitado.",
+    descripcion: "Conferencia sobre ondas y estructuras en los anillos planetarios.",
+    estado: "upcoming",
+    portada: "assets/img/personas/Dr. Daniel Sega.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
+  },
+  {
+    id: "rodney-delgado",
+    titulo: "Galaxias y evolución cósmica: cómo reconstruimos la historia del Universo",
+    fecha: "Jueves 1 de octubre de 2026",
+    horario: "3:30 p.m. – 3:55 p.m.",
+    modalidad: "Presencial · Auditorio Bernardo Lombardo",
+    expositor: "Dr. Rodney Delgado-Serrano",
+    bioExpositor: "Conferencista invitado.",
+    descripcion: "Conferencia sobre evolución de galaxias e historia cósmica.",
+    estado: "upcoming",
+    portada: "assets/img/personas/Dr Rodney Delgado.jpeg",
+    evidencias: { asistentes: null, resumen: "", fotos: [], videoUrl: "" }
   }
 ];
 
@@ -41,7 +145,7 @@ function renderActivities(actividades) {
   if (actividades.length === 0) {
     container.innerHTML = `
       <div class="empty-state-card bento-card">
-        <i class="fas fa-clock-rotate-left empty-icon"></i>
+        <span class="empty-icon" aria-hidden="true">🪐</span>
         <h3>¡El evento está por comenzar!</h3>
         <p>Las evidencias, listas de asistencia, fotografías y grabaciones de cada conferencia se irán publicando aquí al finalizar cada jornada del evento.</p>
         <span class="stay-tuned-badge">🚀 ¡Mantente atento a las actualizaciones!</span>
@@ -58,7 +162,7 @@ function renderActivities(actividades) {
     const card = document.createElement("div");
     card.className = "activity-card";
     card.innerHTML = `
-      <img src="${act.portada}" alt="${act.titulo}" class="card-banner" onerror="this.src='up.jpg'">
+      <img src="${act.portada}" alt="${act.titulo}" class="card-banner" loading="lazy" onerror="this.onerror=null;this.src='assets/img/logos/100-horas-astronomia.png'">
       <div class="card-content">
         <span class="status-badge ${badgeClass}">${badgeText}</span>
         <h3>${act.titulo}</h3>
@@ -74,9 +178,9 @@ function renderActivities(actividades) {
 }
 
 // Filtrar por estado
-function filterActivities(status) {
+function filterActivities(status, button) {
   document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
-  event.target.classList.add("active");
+  (button || document.querySelector(`.filter-btn[onclick*="${status}"]`))?.classList.add("active");
 
   if (status === "all") {
     renderActivities(listaActividades);
