@@ -1074,6 +1074,64 @@
   </div>
 
   <script src="assets/js/programa.js"></script>
+  <script>
+    // Carga directamente las fotos disponibles para cada ponente del programa.
+    (() => {
+      const fotos = {
+        'kenia rodriguez': 'Profesora Kenia Rodríguez.jpeg',
+        'ramiro villareal': 'Profesor Ramiro Villareal.jpeg',
+        'luis marin': 'Luis Marin.jpeg',
+        'reina rodriguez': 'Reina Rodríguez.jpeg',
+        'manuel chacon': 'Manuel Alejandro.jpeg',
+        'pablo martin weigandt beckmann': 'Dr. Pablo Martín Weigandt Beckmann.jpeg',
+        'calors fernandez': 'Carlos Fernández.jpeg',
+        'carlos fernandez': 'Carlos Fernández.jpeg',
+        'daniel sega': 'Dr. Daniel Sega.jpeg',
+        'rodney delgado serrano': 'Dr Rodney Delgado.jpeg',
+        'eduardo camacho': 'Dr. Eduardo Camacho.jpeg',
+        'madelaine rojas': 'Prof, Madeleine Rojas.jpeg',
+        'adams martinez': 'Prof. Adams Martínez.jpeg',
+        'yaris rodriguez': 'profesora Yaris Rodríguez.jpeg',
+        'naddia mclean': 'Naddia Mclean.jpeg',
+        'orlando lopez': 'Orlando López.jpeg',
+        'ivy janssen': 'Ivy Janssen.jpeg',
+        'augusto bouras': 'Mgtr. Augusto Bouras Moreno Sánchez.jpeg',
+        'galymzhan baltabay': 'Mgtr. Galymzhan Baltabay.jpeg',
+        'shayan fathikoohi': 'Mgtr. Shayan Fathikoohi.jpeg',
+        'marcel popescu': 'Dr. Marcel Popescu.jpeg',
+        'ivan stankovich': 'Mgtr. Ivan Stankovich.jpeg',
+        'franklin vasquez': 'Profe Franklin Vasquez.jpeg',
+        'francisco nunez': 'Francisco Núñez P..jpeg',
+        'jesus mario vargas': 'Jesús Mario Vargas.jpeg'
+      };
+      const normalizar = texto => texto.normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim();
+
+      document.querySelectorAll('.speaker-cell').forEach(celda => {
+        const nombre = celda.querySelector('.speaker-info h3')?.textContent;
+        const imagen = celda.querySelector('img.speaker-img');
+        if (!nombre || !imagen) return;
+        const texto = normalizar(nombre);
+        const coincidentes = Object.entries(fotos).filter(([clave]) =>
+          texto.includes(normalizar(clave))
+        );
+        if (!coincidentes.length) return;
+
+        const [primera, ...resto] = coincidentes;
+        imagen.src = `assets/img/personas/${primera[1]}`;
+        imagen.alt = primera[0];
+        resto.forEach(([ponente, archivo]) => {
+          const retrato = imagen.cloneNode();
+          retrato.src = `assets/img/personas/${archivo}`;
+          retrato.alt = ponente;
+          celda.insertBefore(retrato, celda.querySelector('.speaker-info'));
+        });
+      });
+    })();
+  </script>
    
 </body>
 </html>
