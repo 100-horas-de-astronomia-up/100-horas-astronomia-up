@@ -7,22 +7,12 @@
     <title>Actividades - 100 Horas de Astronomía</title>
     
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logos/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logos/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logos/100-horas-astronomia.png">
     
     <!-- Hojas de Estilo -->
     <link rel="stylesheet" href="assets/css/Actividades.css">
     
-    <!-- Librería FontAwesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Three.js CDN -->
-     <script src="assets/js/controljs.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
+    <script src="assets/js/controljs.js"></script>
 </head>
 
 <body>
@@ -35,9 +25,9 @@
     <a href="Evento.html" class="nav-item">Evento</a>
     <a href="Programa.html" class="nav-item">Programa</a>
     <a href="Conferencia.html" class="nav-item">Conferencistas e Invitados</a>
-    <a href="Actividades.html" class="nav-item">Actividades</a>
+    <a href="Actividades.html" class="nav-item active" aria-current="page">Actividades</a>
     <a href="Organizacion.html" class="nav-item">Organización</a>
-    <a href="ServicioSocial.html" class="nav-item">Servicio Social</a>
+    <a href="Serviciosocial.html" class="nav-item">Servicio Social</a>
   </nav>
 </header>
 
@@ -45,13 +35,13 @@
     <section class="activities-section">
         <div class="section-header">
             <h2>Bitácora de Actividades</h2>
-            <p>Explora nuestras próximas conferencias y revisa la evidencia de los eventos realizados.</p>
+            <p>Este jueves 1 de octubre: acto inaugural y conferencias presenciales en el Auditorio Bernardo Lombardo.</p>
             
             <!-- Filtros por estado -->
             <div class="filter-tabs">
-                <button class="filter-btn active" onclick="filterActivities('all')">Todas</button>
-                <button class="filter-btn" onclick="filterActivities('upcoming')">Próximas</button>
-                <button class="filter-btn" onclick="filterActivities('completed')">Realizadas</button>
+                <button class="filter-btn active" onclick="filterActivities('all', this)">Todas</button>
+                <button class="filter-btn" onclick="filterActivities('upcoming', this)">Próximas</button>
+                <button class="filter-btn" onclick="filterActivities('completed', this)">Realizadas</button>
             </div>
         </div>
 
